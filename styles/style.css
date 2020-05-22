@@ -47,6 +47,7 @@ ul {
 }
 
 .advantage {
+	margin: 20px;
 	display: flex;
 	justify-content: center;
 	width: 1000px;
@@ -54,6 +55,7 @@ ul {
 }
 
 .advantage div {
+	padding: 10px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -64,7 +66,6 @@ ul {
 	display: flex;
 	background-color: #f7f7f7;
 }
-
 
 
 .logo {
