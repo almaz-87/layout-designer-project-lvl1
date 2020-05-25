@@ -28,7 +28,7 @@
 			<img src="images/logo.svg" alt="Фотография луны" width="200">
 			<h2>ЖК «Лунное море»</h2>
 			Место, откуда не хочется улетать
-			<button class="btn font-fff" type="submit">Забронировать</button>
+			<a href="#booking"><button class="btn font-fff" type="submit">Забронировать</button></a>
 		</div>
 		
 		<div id ="section1" class="advantage">
@@ -47,8 +47,8 @@
 				При небольшой цене мы располагаемся близко к МКАД. Всего 384 000 километров и вы в самом сердце России.
 			</div>
 		</div>
-		
-		<div id="section2" class="advantage bg-f7f7f7">
+
+		<div id="section2" class="advantage w100 bg-f7f7f7">
 			<div>
 				<h2>О ЖК «Лунное море»</h2>
 				 <p>Все чаще жители Москвы предпочитают загородный дом городской квартире, к тому же связь с мегаполисом не теряется – современные скоростные трассы позволяют без труда добираться до столицы и обратно.</p>
@@ -58,7 +58,7 @@
 				<img src="images/moon-1.jpg" alt="Фото Луны 1" width="350">
 			</div>
 		</div>
-		
+
 		<div id ="section3" class="advantage">
 			<div>
 				<img src="images/moon-2.jpg" alt="Фото Луны 1"  width="350">
@@ -69,41 +69,48 @@
 				 <p>Дома располагаются в новом районе «Лунные моря». При необходимости есть автобусы до района «Лунный материк».</p>
 			</div>
 		</div>
-		<h2>Оставьте заявку сегодня!</h2>
-		<div class="form bg-f7f7f7">
-			<form action="index.html">
-				<fieldset>
-					<legend>Параметры квартиры</legend>
-					Количество комнат:
-						<select name="rooms">
-						  <option value="value1" selected>1</option> 
-						  <option value="value2">2</option>
-						  <option value="value3">3</option>
-						</select>
-					<br>Отделка:
-					<select name="otdelka">
-						  <option value="value1" selected>Без отделки</option> 
-						  <option value="value2">Частичная отделка</option>
-						   <option value="value2">С отделкой</option>
-						</select>
-				</fieldset>
+		
+		<div class="form w100 bg-f7f7f7" id="booking">
+			<h2>Оставьте заявку сегодня!</h2>
+				<form action="index.html">
+					<fieldset>
+						<legend class="font-09D3AC">Параметры квартиры</legend>
+					<div class="flex params">
+						<div>Количество комнат:</div>
+							<select name="rooms" class="width150">
+							  <option value="value1" selected>1</option> 
+							  <option value="value2">2</option>
+							  <option value="value3">3</option>
+							</select>
+					</div>
+						
+					<div class="flex params">
+							<div>Отделка:</div>
+							<select name="otdelka" class="width150">
+								  <option value="value1" selected>Без отделки</option> 
+								  <option value="value2">Частичная отделка</option>
+								   <option value="value2">С отделкой</option>
+							</select>
+					</div>
+					</fieldset>
+					
+					<fieldset>
+						<legend class="font-09D3AC">Контактная информация</legend>
+						<div class="flex">
+							<div>Имя:</div>
+							<input type="text"  class="width175">
+						</div>
+						<div class="flex">
+							<div>Телефон: </div>
+							<input type="text" class="width175">
+						</div>
+						<div class="flex">
+							<div>E-mail:</div>
+							<input type="text" class="width175">
+					</fieldset>
 				
-				<fieldset>
-					<legend>Контактная информация</legend>
-					Имя:
-						<input type="text">
-					<br>
-					Телефон:
-						<input type="text">
-						<br>
-					E-mail:
-						<input type="text">
-				</fieldset>
-				
-				
-				
-				<button>Отправить</button>
-			</form>
+					<button class="font-09D3AC mt-10">Отправить</button>
+				</form>
 		</div>
 	</main>
 	

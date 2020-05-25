@@ -1,4 +1,7 @@
 body {
+	margin: 0;
+	padding: 0;
+	border: 0;
 	font-family: Roboto;
 	font-size: 16px;
 	color: #303846;
@@ -60,7 +63,7 @@ main {
 	margin: 20px;
 	display: flex;
 	justify-content: center;
-	width: 1000px;
+	
 
 }
 
@@ -72,9 +75,43 @@ main {
 	flex-basis: 500px;
 }
 
+.w100 {
+	width: 100%;
+}
+
 .form {
 	margin: 10px;
+	
 	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+fieldset {
+	width: 350px;
+	border-color: #09D3AC;
+}
+
+.flex {
+	padding-bottom: 10px;
+	display:flex;
+	justify-content: space-between;
+}
+
+.params {
+	padding-right: 30px;
+}
+
+.width150 {
+	width: 150px;
+}
+
+.width175 {
+	width: 175px;
+}
+
+.font-09D3AC {
+	color: #09D3AC;
 }
 
 .bg-f7f7f7 {
@@ -92,3 +129,6 @@ main {
 	color: #fff;
 }
 
+.mt-10 {
+	margin-top: 10px;
+}
