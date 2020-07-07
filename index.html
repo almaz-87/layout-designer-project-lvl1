@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-	<header class="menu fixed bg-fff p10">
+	<header class="menu fixed bg-light p10">
 		<div class="logo">
 			<img src="images/logo.svg" alt="Логотип" width="30">
 			<h3>Лунное море</h3>
@@ -24,11 +24,11 @@
 	</header>
 	
 	<main>
-		<section class="booking font-fff">	
-			<div class="booking2 w1000">	
+		<section class="booking font-light">	
+			<div class="container column">	
 				<img src="images/logo.svg" alt="Фотография луны" width="80">
 				<h1>ЖК «Лунное море»</h1>
-				Место, откуда не хочется улетать
+				<p>Место, откуда не хочется улетать</p>
 				<a href="#booking" class="btn btn-white">Забронировать</a>
 			</div>
 		</section>
@@ -50,7 +50,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="bg-f7f7f7">
+		<section class="flex w100 bg-gray">
 			<div id="section2" class="container">
 				<div class="text">
 					<h2>О ЖК «Лунное море»</h2>
@@ -74,13 +74,13 @@
 				</div>
 			</div>
 		</section>
-		<section class="bg-f7f7f7">
-			<div class="form w1000" id="booking">
+		<section class="flex w100 bg-gray">
+			<div class="container column" id="booking">
 				<h2>Оставьте заявку сегодня!</h2>
 				<form action="index.html">
 					<fieldset class = "p20">
-						<legend class="font-09D3AC"><h3>Параметры квартиры</h3></legend>
-					<div class="flex params">
+						<legend class="font-green"><h3>Параметры квартиры</h3></legend>
+					<div class="flex jc-sb pb10 params">
 						<div>Количество комнат:</div>
 							<select name="rooms" class="width150 p10">
 							  <option value="value1" selected>1</option> 
@@ -89,7 +89,7 @@
 							</select>
 					</div>
 						
-					<div class="flex params">
+					<div class="flex jc-sb pb10 params">
 							<div>Отделка:</div>
 							<select name="otdelka" class="width150 p10">
 								  <option value="value1" selected>Без отделки</option> 
@@ -99,30 +99,30 @@
 					</div>
 					</fieldset>
 					
-					<fieldset>
-						<legend class="font-09D3AC"><h3>Контактная информация</h3></legend>
-						<div class="flex">
+					<fieldset class = "p20">
+						<legend class="font-green"><h3>Контактная информация</h3></legend>
+						<div class="flex jc-sb pb10">
 							<div>Имя:</div>
 							<input type="text"  class="width175">
 						</div>
-						<div class="flex">
+						<div class="flex jc-sb pb10">
 							<div>Телефон: </div>
 							<input type="text" class="width175">
 						</div>
-						<div class="flex">
+						<div class="flex jc-sb pb10">
 							<div>E-mail:</div>
 							<input type="text" class="width175">
 						</div>
 					</fieldset>
 				
-					<button class="font-09D3AC btn form-btn">Отправить</button>
+					<button class="btn btn-green">Отправить</button>
 				</form>
 			</div>
 		</section>
 	</main>
 
-	<footer class= "bg-303846 font-fff">
-		<div class="menu w1000">
+	<footer class= "w100 bg-dark">
+		<div class="container menu font-light jc-sb">
 			<div>
 				<div class="logo">
 					<img src="images/logo.svg" alt="Логотип"  width="30">
