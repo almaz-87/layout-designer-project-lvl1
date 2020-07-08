@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-	<header class="menu fixed bg-light p10">
+	<header class="header w100 menu fixed bg-light p10">
 		<div class="logo">
 			<img src="images/logo.svg" alt="Логотип" width="30">
 			<h3>Лунное море</h3>
 		</div>
 		<nav>
-			<ul>
+			<ul class="flex">
 				<li><a href="#section1">Преимущества</a></li>
 				<li><a href="#section2">О ЖК</a></li>
 				<li><a href="#section3">Места для отдыха</a></li>
@@ -50,9 +50,9 @@
 				</div>
 			</div>
 		</section>
-		<section class="flex w100 bg-gray">
+		<section class="bg-gray">
 			<div id="section2" class="container">
-				<div class="text">
+				<div class="mr110">
 					<h2>О ЖК «Лунное море»</h2>
 					 <p>Все чаще жители Москвы предпочитают загородный дом городской квартире, к тому же связь с мегаполисом не теряется – современные скоростные трассы позволяют без труда добираться до столицы и обратно.</p>
 					 <p>Мы построили наши дома на самом близком к Солнцу спутнике, всего в 380 тысяч километров от Земли.</p>
@@ -64,7 +64,7 @@
 		</section>
 		<section>
 			<div id ="section3" class="container">
-				<div class="text">
+				<div class="mr110">
 					<img src="images/moon-2.jpg" alt="Фото Луны 1"  width="300">
 				</div>
 				<div>
@@ -74,29 +74,29 @@
 				</div>
 			</div>
 		</section>
-		<section class="flex w100 bg-gray">
+		<section class="bg-gray">
 			<div class="container column" id="booking">
 				<h2>Оставьте заявку сегодня!</h2>
-				<form action="index.html">
+				<form class="booking-form" action="index.html">
 					<fieldset class = "p20">
 						<legend class="font-green"><h3>Параметры квартиры</h3></legend>
-					<div class="flex jc-sb pb10 params">
-						<div>Количество комнат:</div>
-							<select name="rooms" class="width150 p10">
-							  <option value="value1" selected>1</option> 
-							  <option value="value2">2</option>
-							  <option value="value3">3</option>
-							</select>
-					</div>
-						
-					<div class="flex jc-sb pb10 params">
-							<div>Отделка:</div>
-							<select name="otdelka" class="width150 p10">
-								  <option value="value1" selected>Без отделки</option> 
-								  <option value="value2">Частичная отделка</option>
-								   <option value="value2">С отделкой</option>
-							</select>
-					</div>
+						<div class="flex jc-sb pb10 params">
+							<div>Количество комнат:</div>
+								<select name="rooms" class="width150 p10">
+								  <option value="value1" selected>1</option> 
+								  <option value="value2">2</option>
+								  <option value="value3">3</option>
+								</select>
+						</div>
+							
+						<div class="flex jc-sb pb10 params">
+								<div>Отделка:</div>
+								<select name="otdelka" class="width150 p10">
+									  <option value="value1" selected>Без отделки</option> 
+									  <option value="value2">Частичная отделка</option>
+									   <option value="value2">С отделкой</option>
+								</select>
+						</div>
 					</fieldset>
 					
 					<fieldset class = "p20">
@@ -121,7 +121,7 @@
 		</section>
 	</main>
 
-	<footer class= "w100 bg-dark">
+	<footer class= "bg-dark">
 		<div class="container menu font-light jc-sb">
 			<div>
 				<div class="logo">

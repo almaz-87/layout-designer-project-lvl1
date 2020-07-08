@@ -37,50 +37,27 @@ p {
 
 }
 
-header {
-	height: var(--header-padding);
-    box-sizing: border-box;
-}
-
-header ul {
-	display: flex;
-	list-style-type: none;
-}
-
 main {
 	padding-top: var(--header-padding);
 	
 }
 
-form {
-	margin: 15px;
-	font-weight: 500;
-}
-
-select {
-	border-radius: 10px;
-	border-color: #CCCCCC;
-}
-
-input {
-	border-radius: 10px;
-	border-color: #CCCCCC;
-    padding: 8px;
-	
-}
-fieldset {
-	margin-bottom: 15px;
-	width: 390px;
-	border-color: #09D3AC;
-}
 
 footer ul {
 	margin-left: 30px;
 }
 
 
+.header {
+	height: var(--header-padding);
+    box-sizing: border-box;
+}
+
+.header ul {
+	list-style-type: none;
+}
+
 .menu {
-	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -128,16 +105,40 @@ footer ul {
 .container {
 	margin: 0 auto;
 	width: 1000px;
-	padding: 20px;
+	padding: 50px;
 	display: flex;
 	justify-content: center;
 	
 }
+.booking-form {
+	margin: 15px;
+	font-weight: 500;
+}
+
+.booking-form fieldset {
+	margin-bottom: 15px;
+	width: 390px;
+	border-color: #09D3AC;
+}
+
+
+.booking-form select {
+	border-radius: 10px;
+	border-color: #CCCCCC;
+}
+
+.booking-form input {
+	border-radius: 10px;
+	border-color: #CCCCCC;
+    padding: 8px;
+	
+}
+
 
 .fb330{
 	flex-basis: 330px;
 }
-.text {
+.mr110 {
 	margin-right: 110px;
 }
 
